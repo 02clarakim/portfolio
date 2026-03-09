@@ -9,7 +9,7 @@ function ProjectModal({ project, onClose }) {
       onClick={onClose}
     >
       <div 
-        className="w-full max-w-5xl bg-white rounded-2xl shadow-2xl p-8 max-h-[90vh] overflow-y-auto max-md:p-6"
+        className="w-full max-w-6xl bg-white rounded-2xl shadow-2xl p-8 max-h-[90vh] overflow-y-auto max-md:p-6"
         onClick={(e) => e.stopPropagation()}
       >
         {/* Close Button */}
@@ -33,11 +33,11 @@ function ProjectModal({ project, onClose }) {
 
         <div className="flex gap-8 max-md:flex-col">
           {/* Project Image */}
-          <div className="w-80 h-96 rounded-xl overflow-hidden bg-gray-100 flex-shrink-0 max-md:w-full max-md:h-64">
+          <div className="w-90 h-100 rounded-xl overflow-hidden bg-gray-100 flex-shrink-0 max-md:w-full max-md:h-64">
             <img
               src={project.image}
               alt={project.title}
-              className="w-full h-full object-cover object-left"
+              className="w-full h-full object-cover"
             />
           </div>
 
