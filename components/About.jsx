@@ -57,7 +57,7 @@ function About() {
 
           {/* Resume Button at the bottom */}
           <button
-            onClick={() => window.open("/your-resume.pdf", "_blank")}
+            onClick={() => window.open("/clarakim-resume-uiux.pdf", "_blank")}
             className="mt-4 border border-gray-300 text-gray-700 bg-white/60 px-6 py-2 text-md rounded-lg hover:bg-gray-100 hover:text-gray-900 hover:scale-105 transition-all self-start"
           >
             Resume
