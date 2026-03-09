@@ -4,15 +4,18 @@ import React, { useEffect, useState } from "react";
 
 function Hero() {
   const lines = ["Hello,", "I'm Clara Kim!"];
-  const [showArrow, setShowArrow] = useState(true);
+  const [showArrow, setShowArrow] = useState(false);
 
   useEffect(() => {
+    if (window.innerWidth < 768) return;
+
     const handleScroll = () => {
-      const heroHeight = window.innerHeight * 0.2;
-      setShowArrow(window.scrollY < heroHeight);
+      setShowArrow(window.scrollY < window.innerHeight * 0.8);
     };
 
     window.addEventListener("scroll", handleScroll);
+    handleScroll();
+
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
