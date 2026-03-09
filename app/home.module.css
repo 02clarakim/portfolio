@@ -1,0 +1,24 @@
+.home {
+  min-height: 100vh;
+  display: flex;              /* sidebar + main content in one row */
+}
+
+.mainContent {  /* Change to camelCase in CSS */
+  position: relative;
+  width: 100%;
+  padding-left: 350px;
+  padding-right: 40px;
+  box-sizing: border-box;
+}
+
+/* MOBILE: sidebar becomes top, so remove the left padding */
+@media (max-width: 768px) {
+  .home {
+    flex-direction: column;
+  }
+
+  .mainContent {
+    padding-left: 0;          /* no sidebar width on mobile */
+    padding-right: 20px;
+  }
+}
