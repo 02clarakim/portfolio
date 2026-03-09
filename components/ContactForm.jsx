@@ -49,7 +49,7 @@ function ContactForm() {
       </h2>
       {/* Card centered */}
       <div className="flex justify-left">
-        <div className="w-full max-w-[839px] bg-white/70 border border-gray-300 rounded-xl shadow-sm p-8">
+        <div className="w-full max-w-4xl bg-white/70 border border-gray-300 rounded-xl shadow-sm p-8">
           <form className="space-y-5" onSubmit={handleSubmit}>
             {/* Name */}
             <div>

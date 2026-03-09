@@ -21,7 +21,7 @@ function About() {
     {
       company: "ZEP",
       role: "Software Engineer (Contract)",
-      period: "Aug. 2025 - Present",
+      period: "Aug. 2025 - Dec. 2025",
       description:
         "Automated video creation using Python, AI-generated quizzes, and Figma designs, publishing content via n8n and Coolify.",
     },
